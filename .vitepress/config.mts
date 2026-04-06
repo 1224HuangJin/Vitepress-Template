@@ -5,8 +5,8 @@ export default defineConfig({
   title: "Vitepress 模板",
   description: "一个 VitePress 站点",
 // 这里是一个被注释掉的功能：  【base: "/",】 可以总是以斜杠结尾
-// 添加下面这一行，告诉 VitePress 你的项目路径（不然在部署的时候会出现问题、如果你已经Fork了源存储库，那你可以将base再次注释掉）
-  base: '/Vitepress-Template/',  
+// 添加下面这一行，告诉 VitePress 你的项目路径（不然在部署的时候会出现问题、如果不在GitHub Pages 使用，那你可以将base再次注释掉）
+//  base: '/Vitepress-Template/',  
   cleanUrls: true,
   head: [
     ["link", { rel: "icon", href: "https://avatars.githubusercontent.com/u/169712528" }],
