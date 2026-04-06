@@ -84,21 +84,21 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: "首页", link: "/" },
-          { text: "API 示例", link: "/api-exemples" },
-          { text: "MarkDown 示例", link: "/markdown-exemples" },
+          { text: "MarkDown 示例", link: "/markdown-examples" },
+          { text: "API 示例", link: "/api-examples" },
         ],
         // 以下为侧边栏内容
         sidebar: [
           {
             text: "侧边栏·一",
             items: [
-              { text: "API 示例", link: "/api-exemples" },
+              { text: "API 示例", link: "/api-examples" },
             ]
           },
           {
             text: "侧边栏·二",
             items: [
-              { text: "MarkDown 示例", link: "/markdown-exemples" },
+              { text: "MarkDown 示例", link: "/markdown-examples" },
             ]
           },
         ],
@@ -123,21 +123,21 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: "Home", link: "/en/"},
-          { text: "API Exemples", link: "/en/api-exemples" },
-          { text: "MarkDown Exemples", link: "/en/markdown-exemples" },
+          { text: "MarkDown Examples", link: "/en/markdown-examples" },
+          { text: "API Examples", link: "/en/api-examples" },
         ],
         // 以下为侧边栏内容
         sidebar: [
           {
             text: "Sidebar 1",
             items: [
-              { text: "API Exemples", link: "/en/api-exemples" },
+              { text: "API Exemples", link: "/en/api-examples" },
             ]
           },
           {
             text: "Sidebar 2",
             items: [
-              { text: "MarkDown Exemples", link: "/en/markdown-exemples" },
+              { text: "MarkDown Exemples", link: "/en/markdown-examples" },
             ]
           },
         ],
