@@ -118,6 +118,8 @@ export default defineConfig({
       label: "English",
       lang: "en-US",
       link: "/en/",
+      title: "Vitepress Template",
+      description: "A VitePress Site",
       themeConfig: {
         nav: [
           { text: "Home", link: "/en/"},

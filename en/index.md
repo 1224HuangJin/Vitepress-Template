@@ -7,8 +7,8 @@ hero:
   text: "A VitePress Site"
   tagline: My great project tagline
   image:
-  src: https://avatars.githubusercontent.com/u/169712528 # 若为本地图片 请确保你的 public 目录下有这个图片
-  alt: ... Logo
+    src: "https://avatars.githubusercontent.com/u/169712528" # 若为本地图片 请确保你的 public 目录下有这个图片
+    alt: "... Logo"
   actions:
     - theme: brand
       text: Markdown Examples
@@ -44,7 +44,7 @@ head:
     content: Vitepress 示例网站 - 1224HuangJin
 - - meta
   - name: twitter:card
-    content: https://avatars.githubusercontent.com/u/169712528
+    content: summary_large_image
 - - link
   - rel: icon
     type: image/icon
