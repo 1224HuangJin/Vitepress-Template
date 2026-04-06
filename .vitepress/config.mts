@@ -68,7 +68,7 @@ export default defineConfig({
         forceLocale: true,
       },
     },
-  }, // 【修复】在这里添加了 "}," 彻底关闭了全局的 themeConfig！这样后面的 markdown 和 locales 才是独立平级的。
+  }, // 【AI修复】在这里添加了 "}," 彻底关闭了全局的 themeConfig！这样后面的 markdown 和 locales 才是独立平级的。
 
   markdown: {
     image: {
@@ -121,8 +121,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: "Home", link: "/en/"},
-          { text: "API Exemples", link: "/api-exemples" },
-          { text: "MarkDown Exemples", link: "/markdown-exemples" },
+          { text: "API Exemples", link: "/en/api-exemples" },
+          { text: "MarkDown Exemples", link: "/en/markdown-exemples" },
         ],
         // 以下为侧边栏内容
         sidebar: [
@@ -155,7 +155,7 @@ export default defineConfig({
           pattern: "https://github.com/1224HuangJin/Vitepress-Template/edit/main/:path",
           text: "Edit this page on GitHub"
         } // 结束 editLink
-      } // 【修复】在这里补上了结束 en 的 themeConfig 的括号，理顺了结尾结构
+      } // 【AI修复】在这里补上了结束 en 的 themeConfig 的括号，理顺了结尾结构
     } // 结束 en
   } // 结束 locales
 }); // 结束 defineConfig
