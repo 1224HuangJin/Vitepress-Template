@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
+// https://vitepress.dev/zh/reference/site-config
 export default defineConfig({
   title: "Vitepress 模板",
   description: "一个 VitePress 站点",
@@ -9,97 +9,154 @@ export default defineConfig({
   base: '/Vitepress-Template/',  
   cleanUrls: true,
   head: [
-    ["link", { rel: "icon", href: "https://icons.siiway.org/siiway/icon.svg" }],
+    ["link", { rel: "icon", href: "https://avatars.githubusercontent.com/u/169712528" }],
   ],
   lastUpdated: true,
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "主页", link: "/" }],
-
-    sidebar: {
-      ["/"]: [
-        { text: "回到主页", link: "/" },
-        {
-          text: "示例文档",
-          items: [
-            { text: "Markdown 示例", link: "/markdown-examples" },
-            { text: "API 示例", link: "/api-examples" },
-          ],
-        },
-        { text: "外链示例", link: "https://not-exist.wss.moe/outlink-zh" },
-      ],
-      ["/en_us/"]: [
-        { text: "Back to homepage", link: "/en_us/" },
-        {
-          text: "Example docs",
-          items: [
-            { text: "Markdown Examples", link: "/en_us/markdown-examples" },
-            { text: "API Examples", link: "/en_us/api-examples" },
-          ],
-        },
-        { text: "Outlink Test", link: "https://not-exist.wss.moe/outlink-en" },
-      ],
-    },
-
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-      { icon: "qq", link: "https://not-exist.wss.moe/qq" },
-      { icon: "discord", link: "https://not-exist.wss.moe/discord" },
-    ],
-
-    editLink: {
-      pattern: "https://github.com/wyf9/vitepress-template/edit/main/:path",
-      text: "在 GitHub 上编辑本页",
-    },
-
-    lastUpdated: {
-      text: "最后更新于",
-      formatOptions: {
-        dateStyle: "full",
-        timeStyle: "full",
-      },
-    },
-  },
-
-  locales: {
-    root: {
-      label: "简体中文",
-      lang: "zh",
-    },
-    en_us: {
-      label: "English",
-      lang: "en",
-      link: "/en_us/",
-
-      title: "Vitepress Template",
-      description: "A VitePress Site",
 
       themeConfig: {
-        nav: [{ text: "Home", link: "/en_us/" }],
-
+        // https://vitepress.dev/reference/default-theme-config
+        // 显示在主页右侧的logo?
+        logo: 'https://avatars.githubusercontent.com/u/169712528',
+        // 右上角的社交媒体
         socialLinks: [
-          { icon: "github", link: "https://github.com/vuejs/vitepress" },
-          { icon: "discord", link: "https://not-exist.wss.moe/discord" },
+          { icon: "github", link: "https://github.com/1224HuangJin/Vitepress-Template" },
+          { icon: "discord", link: "https://discord.com/app" },
         ],
 
-        editLink: {
-          pattern: "https://github.com/wyf9/vitepress-template/edit/main/:path",
-          text: "Edit this page on GitHub",
-        },
+        // 搜索功能 https://vitepress.dev/zh/reference/default-theme-search
+        search: {
+          provider: 'local',
+          options: {
+            locales: {
+              root: { // 如果你想翻译默认语言，请将此处设为 `root`
+                translations: {
+                  button: {
+                    buttonText: '搜索',
+                    buttonAriaLabel: '搜索'
+                  },
+                  modal: {
+                    displayDetails: '显示详细列表',
+                    resetButtonTitle: '重置搜索',
+                    backButtonTitle: '关闭搜索',
+                    noResultsText: '没有结果',
+                    footer: {
+                      selectText: '选择',
+                      selectKeyAriaLabel: '输入',
+                      navigateText: '导航',
+                      navigateUpKeyAriaLabel: '上箭头',
+                      navigateDownKeyAriaLabel: '下箭头',
+                      closeText: '关闭',
+                      closeKeyAriaLabel: 'Esc'
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
 
-        lastUpdated: {
-          text: "Last updated at",
-          formatOptions: {
-            dateStyle: "full",
-            timeStyle: "full",
+          editLink: {
+            pattern: "https://github.com/1224HuangJin/Vitepress-Template/edit/main/:path",
+            text: "在 GitHub 上编辑本页",
           },
-        },
-      },
-    },
-  },
-  markdown: {
-    image: {
-      lazyLoading: true,
-    },
-  },
-});
+
+          lastUpdated: {
+            text: "最后更新于",
+            formatOptions: {
+              dateStyle: "full",
+              timeStyle: "full",
+              forceLocale: true,
+              },
+            },
+          },
+
+          markdown: {
+            image: {
+              lazyLoading: true,
+            }
+          },
+
+      locales: {
+              // ==================== 简体中文配置 ====================
+              root: {
+                label: "简体中文",
+                lang: "zh-CN", 
+                themeConfig: {
+                  nav: [
+                    { text: "首页", link: "/" },
+                    { text: "API 示例", link: "/api-exemples" },
+                    { text: "MarkDown 示例", link: "/markdown-exemples" },
+                  ],
+                  // 以下为侧边栏内容
+                  sidebar: [
+                    {
+                      text: "侧边栏·一",
+                      items: [
+                        { text: "API 示例", link: "/api-exemples" },
+                      ]
+                    },
+                    {
+                      text: "侧边栏·二",
+                      items: [
+                        { text: "MarkDown 示例", link: "/markdown-exemples" },
+                      ]
+                    },
+                  ],
+                  footer: {
+                    message: '本网站上的所有内容均根据 ... License',
+                    copyright: 'Copyright © 2026 1224HuangJin',
+                  },
+                  editLink: {
+                    pattern: "https://github.com/1224HuangJin/Vitepress-Template/edit/main/:path",
+                    text: "在 GitHub 上编辑本页"
+                  }
+                }
+              },
+
+              // ==================== 英文配置 ====================
+              en: {
+                label: "English",
+                lang: "en-US",
+                link: "/en/",
+                themeConfig: {
+                  nav: [
+                    { text: "Home", link: "/en/"},
+                    { text: "API Exemples", link: "/api-exemples" },
+                    { text: "MarkDown Exemples", link: "/markdown-exemples" },
+                  ],
+                  // 以下为侧边栏内容
+                  sidebar: [
+                    {
+                      text: "Sidebar 1",
+                      items: [
+                        { text: "API Exemples", link: "/en/api-exemples" },
+                      ]
+                    },
+                    {
+                      text: "Sidebar 2",
+                      items: [
+                        { text: "MarkDown Exemples", link: "/en/markdown-exemples" },
+                      ]
+                    },
+                  ],
+                  footer: {
+                    message: 'All content on this website released under ... license',
+                    copyright: 'Copyright © 2026 1224HuangJin'
+                  },
+                  lastUpdated:{
+                    text: 'Last update at',
+                    formatOptions: {
+                      dateStyle: 'full',
+                      timeStyle: 'medium',
+                      forceLocale: true,
+                    }
+                  },                  
+                  editLink: {
+                      pattern: "https://github.com/1224HuangJin/Vitepress-Template/edit/main/:path",
+                      text: "Edit this page on GitHub"
+                    
+                }
+              }
+            }
+          }
+        });

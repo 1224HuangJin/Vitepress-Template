@@ -1,4 +1,13 @@
-# Vitepress Template
+# Vitepress Template - 1224HuangJin
+
+
+此Vitepress模板由 [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template) 二改而来  <br> This is a modified version of [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template).
+
+**下面是 [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template) 的原始README** <br> **Below is the original README for [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template).**
+
+**以下内容并不代表该存储库的任何内容（LICENSE，等。。。）、仅用于参考原版模板。** <br> **The following content does not represent any content of this repository (LICENSE, etc.) and is for reference only.**
+
+---
 
 For self-use mainly.
 

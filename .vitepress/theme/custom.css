@@ -1,0 +1,22 @@
+/** spoiler START（剧透黑幕样式） **/
+/* 以下内容由AI帮助
+功能为： 那种“文字被抹黑，鼠标悬停才显现”的二次元常见效果
+
+如何使用？
+在文章里这样写：
+《那家伙其实是个 <span class="spoiler">傲娇</span>。》
+*/
+.spoiler {
+  background-color: #333; /* 暗色遮盖 */
+  color: #333;           /* 文字颜色与背景一致 */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.spoiler:hover {
+  background-color: transparent; /* 悬停显示文字 */
+  color: inherit;
+}
+/** spoiler END（剧透黑幕样式） **/
