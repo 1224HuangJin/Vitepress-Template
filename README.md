@@ -1,6 +1,5 @@
 # Vitepress Template - 1224HuangJin
 
-
 此Vitepress模板由 [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template) 二改而来  <br> This is a modified version of [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template).
 
 **下面是 [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template) 的原始README** <br> **Below is the original README for [wyf9/vitepress-template](https://github.com/wyf9/vitepress-template).**

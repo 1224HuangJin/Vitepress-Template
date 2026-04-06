@@ -38,7 +38,7 @@ head:
     content: https://avatars.githubusercontent.com/u/169712528
 - - meta
   - property: og:url
-    content: https://google.com
+    content: https://google.com/
 - - meta
   - name: title
     content: Vitepress 示例网站 - 1224HuangJin
